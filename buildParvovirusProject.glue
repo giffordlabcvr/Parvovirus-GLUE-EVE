@@ -1,3 +1,0 @@
-run file buildCoreProject.glue
-run file buildGenusLevelProjects.glue
-run file buildGenusLevelPaleoProjects.glue
