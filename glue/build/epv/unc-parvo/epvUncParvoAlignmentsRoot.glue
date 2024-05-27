@@ -1,0 +1,8 @@
+  delete alignment AL_UNC_PARVOVIRINAE
+
+  # Import unconstrained pre-built alignments
+  module unconstrainedAlignmentImporter 
+
+    #~# Internal node alignments (subfamily)
+    import AL_UNC_PARVOVIRINAE -f alignments/internal/subfamily/parvovirinae.eve.aln.fna
+    exit
