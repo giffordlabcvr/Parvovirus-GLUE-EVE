@@ -1,3 +1,7 @@
+# Extend the database schema
+schema-project parvoviridae
+  run file glue/build/core/parvoSchemaExtensionsPaleovirus.glue
+  exit
 
 # Build paleovirus extensions for each genus that has EVE representatives
 project parvoviridae
