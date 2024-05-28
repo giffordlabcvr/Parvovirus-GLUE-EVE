@@ -1,10 +1,6 @@
   
   # delete previous extension
   #run file glue/build/epv/dependo/epvDependoDeletePreviousExtensionBuild.glue
-
-
-  # create modules
-  run file glue/build/epv/dependo/epvDependoModules.glue
   
   # Import endogenous parvoviral element (EPV) sequences
   run file glue/build/epv/dependo/epvDependoImportSources.glue
@@ -14,7 +10,6 @@
   
   # Declare references 
   run file glue/build/epv/dependo/epvDependoReferences.glue
-
 
   # Set up constrained alignment tree for the Dependoparvoviruses
   run file glue/build/epv/dependo/epvDependoAlignmentTree.glue

@@ -1,10 +1,7 @@
   
   # delete previous extension
   run file glue/build/epv/ichthama/deletePreviousExtensionBuild.glue
- 
-  # Create modules
-  run file glue/build/epv/ichthama/epvIchthamaModules.glue
-  
+
   # Import endogenous parvoviral element (EPV) sequences
   run file glue/build/epv/ichthama/epvIchthamaImportSources.glue
   
