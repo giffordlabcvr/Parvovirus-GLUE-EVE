@@ -8,7 +8,7 @@ glue.inMode("module/tabularUtility", function() {
 _.each(loadResult, function(eveObj) {
 
 	//glue.log("INFO", "LOADED reference EPV INFO ", eveObj);
-    var source_name = eveObj.source_name
+    var source_name = 'fasta-refseqs-dependo-epv';
 	glue.inMode("custom-table-row/refcon_data/"+eveObj.sequenceID, function() {
 	
 		//glue.log("INFO", "Entering locus data for EVE reference:", eveObj.sequenceID);

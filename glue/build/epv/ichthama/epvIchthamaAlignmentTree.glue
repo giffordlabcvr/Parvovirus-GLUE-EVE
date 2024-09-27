@@ -2,17 +2,17 @@
 
 
   #~# Root (Family)  
-  alignment AL_Parvoviridae_MASTER add member --whereClause "source.name like '%ichthama-epv'"
+  alignment AL_FAMILY_Parvoviridae  add member --whereClause "source.name like '%ichthama-epv'"
 
 
-  alignment AL_Parvoviridae_MASTER
+  alignment AL_FAMILY_Parvoviridae 
   
-	demote member AL_Hamaparvovirinae  --whereClause "sequence.source.name like '%ichthama-epv'"
+	demote member AL_SUBFAMILY_Hamaparvovirinae  --whereClause "sequence.source.name like '%ichthama-epv'"
     exit
 
 
   #~# Subfamily
-  alignment AL_Hamaparvovirinae
+  alignment AL_SUBFAMILY_Hamaparvovirinae
   
 	demote member AL_GENUS_Ichthama --whereClause "sequence.source.name like '%ichthama-epv'"	
     exit

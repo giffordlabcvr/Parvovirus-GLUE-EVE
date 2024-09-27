@@ -1,6 +1,6 @@
   
   # delete previous extension
-  run file glue/build/epv/proto/deletePreviousExtensionBuild.glue 
+  #run file glue/build/epv/proto/deletePreviousExtensionBuild.glue 
   
   # Import endogenous parvoviral element (EPV) sequences
   run file glue/build/epv/proto/epvProtoImportSources.glue

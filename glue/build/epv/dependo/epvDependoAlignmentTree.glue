@@ -2,30 +2,30 @@
 
 
   #~# Root (Family)  
-  alignment AL_Parvoviridae_MASTER add member --whereClause "source.name = 'fasta-refseqs-dependo-epv'"
-  alignment AL_Parvoviridae_MASTER add member --whereClause "source.name = 'ncbi-refseqs-dependo-epv'"
+  alignment AL_FAMILY_Parvoviridae  add member --whereClause "source.name = 'fasta-refseqs-dependo-epv'"
+  alignment AL_FAMILY_Parvoviridae  add member --whereClause "source.name = 'ncbi-refseqs-dependo-epv'"
  
  
 
-  alignment AL_Parvoviridae_MASTER
+  alignment AL_FAMILY_Parvoviridae 
   
-	demote member AL_Parvovirinae      --whereClause "sequence.source.name = 'fasta-refseqs-dependo-epv'"
-	demote member AL_Parvovirinae      --whereClause "sequence.source.name = 'ncbi-refseqs-dependo-epv'"
+	demote member AL_SUBFAMILY_Parvovirinae      --whereClause "sequence.source.name = 'fasta-refseqs-dependo-epv'"
+	demote member AL_SUBFAMILY_Parvovirinae      --whereClause "sequence.source.name = 'ncbi-refseqs-dependo-epv'"
 	
     exit
 
 
   #~# Subfamily
 
-  alignment AL_Parvovirinae
+  alignment AL_SUBFAMILY_Parvovirinae
   
-	demote member AL_CROSS_GENUS_Erythro_Dependo_Copi_Tetra   --whereClause "sequence.source.name = 'fasta-refseqs-dependo-epv'"
-	demote member AL_CROSS_GENUS_Erythro_Dependo_Copi_Tetra   --whereClause "sequence.source.name = 'ncbi-refseqs-dependo-epv'"
+	demote member AL_SUPERGENUS_DECTA   --whereClause "sequence.source.name = 'fasta-refseqs-dependo-epv'"
+	demote member AL_SUPERGENUS_DECTA   --whereClause "sequence.source.name = 'ncbi-refseqs-dependo-epv'"
     
     exit
 
 
-  alignment AL_CROSS_GENUS_Erythro_Dependo_Copi_Tetra
+  alignment AL_SUPERGENUS_DECTA
   
 	demote member AL_GENUS_Dependo   --whereClause "sequence.source.name = 'fasta-refseqs-dependo-epv'"
 	demote member AL_GENUS_Dependo   --whereClause "sequence.source.name = 'ncbi-refseqs-dependo-epv'"

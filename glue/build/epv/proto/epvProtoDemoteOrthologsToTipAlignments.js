@@ -5,7 +5,7 @@
 
 // Preset variables
 var refconDataPath = "tabular/eve/parvovirinae/epv-proto-refseqs-side-data.tsv";
-var rootAlignment = 'AL_Parvoviridae_MASTER';
+var rootAlignment = 'AL_FAMILY_Parvoviridae ';
 
 // Load the refcon data and store relationships between locus and viral taxonomy
 var epvRefseqResultMap = {};

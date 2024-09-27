@@ -2,17 +2,17 @@
 
 
   #~# Root (Family)  
-  alignment AL_Parvoviridae_MASTER add member --whereClause "source.name = 'fasta-refseqs-unc-parvo-epv'"
-  alignment AL_Parvoviridae_MASTER add member --whereClause "source.name = 'fasta-digs-unc-parvo-epv'"
+  alignment AL_FAMILY_Parvoviridae  add member --whereClause "source.name = 'fasta-refseqs-unc-parvo-epv'"
+  alignment AL_FAMILY_Parvoviridae  add member --whereClause "source.name = 'fasta-digs-unc-parvo-epv'"
  
 
-  alignment AL_Parvoviridae_MASTER
-	demote member AL_Parvovirinae  --whereClause "sequence.source.name = 'fasta-refseqs-unc-parvo-epv'"
-	demote member AL_Parvovirinae  --whereClause "sequence.source.name = 'fasta-refseqs-unc-parvo-epv'"
+  alignment AL_FAMILY_Parvoviridae 
+	demote member AL_SUBFAMILY_Parvovirinae  --whereClause "sequence.source.name = 'fasta-refseqs-unc-parvo-epv'"
+	demote member AL_SUBFAMILY_Parvovirinae  --whereClause "sequence.source.name = 'fasta-refseqs-unc-parvo-epv'"
     exit
 
 
   #~# Subfamily level
-  alignment AL_Parvovirinae
+  alignment AL_SUBFAMILY_Parvovirinae
     derive segments AL_UNC_PARVOVIRINAE  -a --mergeStrategy OVERWRITE
     exit
