@@ -2,7 +2,7 @@
 var loadResult;
 glue.inMode("module/tabularUtility", function() {
 	loadResult = glue.tableToObjects(glue.command(["load-tabular", "tabular/eve/parvovirinae/epv-amdo-refseqs-side-data.tsv"]));
-    glue.log("INFO", "load result was:", loadResult);
+    glue.log("FINE", "load result was:", loadResult);
 });
 
 _.each(loadResult, function(eveObj) {

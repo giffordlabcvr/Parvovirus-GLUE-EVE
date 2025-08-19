@@ -7,7 +7,7 @@ schema-project parvoviridae
 project parvoviridae
 
   # Parvovirinae EVEs
-  #run file glue/build/epv/amdo/buildAmdoPaleoProject.glue
+  run file glue/build/epv/amdo/buildAmdoPaleoProject.glue
   run file glue/build/epv/proto/buildProtoPaleoProject.glue
   run file glue/build/epv/erythro/buildErythroPaleoProject.glue
   #run file glue/build/epv/dependo/buildDependoPaleoProject.glue
@@ -17,12 +17,3 @@ project parvoviridae
   run file glue/build/epv/ichthama/buildIchthamaPaleoProject.glue
   
   exit
-
-
-# Remove unconstrained alignments (optional)
-project parvoviridae
-
-  run file glue/build/core/deleteUnconstrainedMSAs.glue
-
-  exit
-

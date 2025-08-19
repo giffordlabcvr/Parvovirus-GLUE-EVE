@@ -14,14 +14,15 @@
   #~# Subfamily
   alignment AL_SUBFAMILY_Hamaparvovirinae
   
-	demote member AL_GENUS_Ichthama --whereClause "sequence.source.name like '%ichthama-epv'"	
+	demote member AL_SUPERGENUS_Chaph_Ichth --whereClause "sequence.source.name like '%ichthama-epv'"	
     exit
 
   
   #~# Genus level
-  alignment AL_GENUS_Ichthama
+  alignment AL_SUPERGENUS_Chaph_Ichth
   
-	# Derive constrained alignment segments from unconstrained alignments
-    derive segments AL_UNC_EPV_ichthama-root  -a --mergeStrategy OVERWRITE	
+	demote member AL_GENUS_Ichthama --whereClause "sequence.source.name like '%ichthama-epv'"	
     exit
 
+  # Derive constrained alignment segments from unconstrained alignments
+  alignment AL_GENUS_Ichthama derive segments AL_UNC_EPV_ichthama-root  -a --mergeStrategy OVERWRITE	
